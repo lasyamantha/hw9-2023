@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main Course</title>
+  <style>
+    /* Styling for the skip to content button */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 10px;
+      z-index: 999;
+    }
+    /* Styling for the food images */
+    .food-image {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      margin: 10px;
+	}
+	/* Default View */
+	.grid-container {
+            display: grid;
+            width: 90%;
+			grid-template-columns: repeat(1, auto);
+			grid-template-rows: repeat(9, auto);
+			grid-gap: 10px;
+			margin: 0 auto;
+		}
+		.grid-item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: #f2f2f2;
+			padding: 10px;
+			font-size: 12px;
+			font-family: sans-serif;
+			text-align: left;
+			overflow: hidden;
+		}
+		.grid-item img {
+			max-width: 100%;
+			max-height: 100%;
+        }
+        
+        /*500px view*/
+        @media screen and (min-width: 700px) {
+            .grid-container {
+                display: grid;
+                width: 90%; /* The container should have a width of 90% */
+                grid-template-columns: repeat(4, auto);
+                grid-template-rows: repeat(5, auto);
+                grid-gap: 10px;
+                margin: 0 auto;
+                }
+            .grid-item {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+		    }
+            }
+        /*700px view*/
+        @media screen and (min-width: 1024px) {
+            .grid-container {
+            display: grid;
+            width: 90%;
+			grid-template-columns: repeat(6, auto);
+			grid-template-rows: repeat(3, auto);
+			grid-gap: 10px;
+			margin: 0 auto;
+		    }
+		    .grid-item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			}
+		}
+	nav ul {
+  		list-style: none;
+  		display: flex;
+	}
+	nav {
+		background-color: #333;
+		overflow: hidden;
+		font-weight: bold;
+	}
+
+	nav a {
+		float: left;
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+
+	nav a:hover {
+		background-color: #ddd;
+		color: black;
+	}
+
+	nav .active {
+		
+		color: white;
+		text-decoration: underline;
+	}	
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  
+  <header>
+    <nav aria-label="Main Navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="appetizer.html">Appetizer</a></li>
+			<li><a class="active" href="main_course.html">Main Course</a></li>
+			<li><a href="dessert.html">Dessert</a></li>
+		</ul>
+	</nav>	
+  </header>
+
+  <a href="#main-content"><button>Skip to Content</button></a>  
+  <main id="main-content">
+    <h1>Main Course!</h1>
+    
+    <div class="grid-container">
+		<div class="grid-item">
+			<img src="https://cdn.pickuplimes.com/cache/47/5a/475a108130d7fa7130b263b83528a80f.jpg" alt="Cauliflower Taco" class="food-image">
+		</div>
+		<div class="grid-item">
+            <p>
+                <b> Cauliflower Tacos</b> <br>
+                Step 1: <br>
+                Step 2:	<br>
+                Step 3:	<br>
+                Step 4:	<br>
+                Step 5:	<br>
+                Step 6:	<br>
+                Step 7:	<br>
+                Step 8:
+            </p>
+		</div>
+		<div class="grid-item">
+			<img src="https://cdn.pickuplimes.com/cache/92/aa/92aa96b722b0f06982d2e1b6eedd8ed1.jpg" alt="Jackfruit Noodles" class="food-image">
+		</div>
+		<div class="grid-item">
+			<p>
+                <b> Jackfruit Noodles </b> <br>
+                Step 1: <br>
+                Step 2:	<br>
+                Step 3:	<br>
+                Step 4:	<br>
+                Step 5:	<br>
+                Step 6:	<br>
+                Step 7:	<br>
+                Step 8:
+            </p>
+		</div>
+		<div class="grid-item">
+			<img src="https://cdn.pickuplimes.com/cache/9b/ec/9beca116bd7fb46814d44dcc060b7cf9.jpg" alt="Garlic Chili Noodles" class="food-image">
+		</div>
+		<div class="grid-item">
+            <p>
+                <b> Garlic Chili Noodles </b> <br>
+                Step 1: <br>
+                Step 2:	<br>
+                Step 3:	<br>
+                Step 4:	<br>
+                Step 5:	<br>
+                Step 6:	<br>
+                Step 7:	<br>
+                Step 8:
+            </p>
+            
+		</div>
+		<div class="grid-item">
+			<img src="https://cdn.pickuplimes.com/cache/a7/49/a749d345200348b45ac9d07b9fa394c6.jpg" alt="Tofu Tikka Masala" class="food-image">
+		</div>
+		<div class="grid-item">
+            <p>
+                <b> Tofu Tikka Masala </b> <br>
+                Step 1: <br>
+                Step 2:	<br>
+                Step 3:	<br>
+                Step 4:	<br>
+                Step 5:	<br>
+                Step 6:	<br>
+                Step 7:	<br>
+                Step 8:
+            </p>
+		</div>
+		<div class="grid-item">
+			<img src="https://cdn.pickuplimes.com/cache/75/fc/75fc04d8cdf721ef2bbc0696e311e7ea.jpg" alt="Spicy Orange Tofu" class="food-image">
+		</div>
+		<div class="grid-item">
+			<p>
+                <b> Spicy Orange Tofu </b> <br>
+                Step 1: <br>
+                Step 2:	<br>
+                Step 3:	<br>
+                Step 4:	<br>
+                Step 5:	<br>
+                Step 6:	<br>
+                Step 7:	<br>
+                Step 8:
+            </p>
+        </div>
+        <div class="grid-item">
+			<img src="https://cdn.pickuplimes.com/cache/66/f4/66f4107dca3dbeb0cf3fb42c5ee08ade.jpg" alt="Couscous Salad" class="food-image">
+		</div>
+		<div class="grid-item">
+			<p>
+                <b> Couscous Salad </b> <br>
+                Step 1: <br>
+                Step 2:	<br>
+                Step 3:	<br>
+                Step 4:	<br>
+                Step 5:	<br>
+                Step 6:	<br>
+                Step 7:	<br>
+                Step 8:
+            </p>
+        </div>
+        <div class="grid-item">
+			<img src="https://cdn.pickuplimes.com/cache/c3/e5/c3e55119c2cbdbca28257c0b1a7a797f.jpg" alt="Pasta Salad" class="food-image">
+		</div>
+		<div class="grid-item">
+			<p>
+                <b> Pasta Salad </b> <br>
+                Step 1: <br>
+                Step 2:	<br>
+                Step 3:	<br>
+                Step 4:	<br>
+                Step 5:	<br>
+                Step 6:	<br>
+                Step 7:	<br>
+                Step 8:
+            </p>
+        </div>
+        <div class="grid-item">
+			<img src="https://cdn.pickuplimes.com/cache/07/6f/076f11b7b3433d6428a92e37e6c7e914.jpg" alt="Hummus Pasta Bake" class="food-image">
+		</div>
+		<div class="grid-item">
+			<p>
+                <b> Hummus Pasta Bake </b> <br>
+                Step 1: <br>
+                Step 2:	<br>
+                Step 3:	<br>
+                Step 4:	<br>
+                Step 5:	<br>
+                Step 6:	<br>
+                Step 7:	<br>
+                Step 8:
+            </p>
+        </div>
+        <div class="grid-item">
+			<img src="https://cdn.pickuplimes.com/cache/27/a9/27a9cfbba6bcaba8ca08d5fa28497374.jpg" alt="Cauliflower Pizza" class="food-image">
+		</div>
+		<div class="grid-item">
+			<p>
+                <b> Cauliflower Pizza </b> <br>
+                Step 1: <br>
+                Step 2:	<br>
+                Step 3:	<br>
+                Step 4:	<br>
+                Step 5:	<br>
+                Step 6:	<br>
+                Step 7:	<br>
+                Step 8:
+            </p>
+        </div>
+  </main>
+  
+  <footer>
+    <nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="appetizer.html">Appetizer</a></li>
+			<li><a class="active" href="main_course.html">Main Course</a></li>
+			<li><a href="dessert.html">Dessert</a></li>
+		</ul>
+	  </nav>
+  </footer>
+  
+</body>
+</html>
